@@ -2,7 +2,7 @@
 
 __An open source Ruby on Rails content management system for Rails 3.__
 
-This is a custom implementation of Refiner CMS for the Mediterraneo web site. I'll be posting information specific to this web site here, and I'll leave information about Refinery below for reference.
+This is a custom implementation of Refinery CMS for the Mediterraneo web site. I'll be posting information specific to this web site here, and I'll leave information about Refinery below for reference.
 
 Refinery also supports Rails 2.x using the [Rails 2.x stable branch](http://github.com/resolve/refinerycms/tree/rails2-stable). More information at [http://refinerycms.com](http://refinerycms.com)
 
