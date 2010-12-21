@@ -1,0 +1,12 @@
+<div id='header_content'>  
+  <div id="logo">
+    <%= link_to(image_tag("/images/med-logo.png", :alt => "Mediterraneo Design Build"), root_url(:only_path => true)) %>
+    <div id="logo-box"> </div>
+  </div>
+  <%= render :partial => "/shared/menu",
+             :locals => {
+               :dom_id => 'menu',
+               :css => 'menu'
+             } -%>
+
+</div>
