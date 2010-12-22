@@ -84,7 +84,7 @@ a:active, a.active {
 
 #submenu ul li {
   margin-right: 10px;
-  line-height: 165%;
+  line-height: 175%;
 }
 
 #submenu ul li a {
@@ -96,7 +96,7 @@ a:active, a.active {
 #submenu ul li.selected a, #submenu ul li a:hover {
   color: #fff;
   padding-right: 15px;
-  background: url(/images/left-arrow.png) no-repeat 100% 55%;
+  background: url(/images/left-arrow.png) no-repeat 100% 75%;
 }
 
 /* 
