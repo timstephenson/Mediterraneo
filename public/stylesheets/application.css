@@ -124,10 +124,11 @@ a:active, a.active {
 }
 #body_content {
   width: 460px;
-  margin: 50px 10px 50px 505px;
+  margin: 50px 0px 50px 505px;
 }
 .pull-quote {
   height: 110px;
+  margin: 30px 0px;
 }
 .pull-quote p {
   font-size: 20px;
