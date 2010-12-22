@@ -11,6 +11,10 @@ body {
   background-color: #9a9a94;
 }
 
+#page {
+  width: 975px;
+}
+
 a img {
   border: none;
 }
@@ -24,6 +28,7 @@ a:hover {
 a:active, a.active {
   color: #ffffff;
 }
+
 /* 
   Header styles  -----------------------------------------------------------------------------
 */
@@ -64,9 +69,35 @@ a:active, a.active {
 #menu ul li.selected a, #menu ul li a:hover {
   color: #fff;
 }
-#page {
-  width: 975px;
+/* 
+  Sub Menu styles  -----------------------------------------------------------------------------
+*/
+#submenu ul {
+  list-style: none;
+  margin-top: -82px;
+  margin-left: 290px;
+  padding: 0px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 9px;
+  float: left;
 }
+
+#submenu ul li {
+  margin-right: 10px;
+}
+
+#submenu ul li a {
+  padding: 1px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+#submenu ul li.selected a, #submenu ul li a:hover {
+  color: #fff;
+  padding-right: 15px;
+  background: url(/images/left-arrow.png) no-repeat 100% 55%;
+}
+
 /* 
   Body styles  -----------------------------------------------------------------------------
 */

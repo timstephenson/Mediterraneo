@@ -5,8 +5,18 @@
   </div>
   <%= render :partial => "/shared/menu",
              :locals => {
-               :dom_id => 'menu',
-               :css => 'menu'
+                :dom_id => 'menu',
+                :css => 'menu',
+                :collection => @menu_pages,
+                :hide_children => true
              } -%>
 
+   <%= render :partial => '/shared/menu',
+                :locals => {
+                  :dom_id => 'submenu',
+                  :css => 'menu',
+                  :roots => @menu_pages.reject{|p| p.parent_id != @page.root.id },
+                  :collection => @menu_pages.reject{|p| !p.self_and_ancestors.map(&:id).include?(@page.root.id) },
+                  :extra_suffix => 'submenu'
+                } -%>
 </div>
