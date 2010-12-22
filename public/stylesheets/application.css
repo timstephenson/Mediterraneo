@@ -89,7 +89,7 @@ a:active, a.active {
 #submenu ul li a {
   padding: 1px 10px;
   text-decoration: none;
-  color: #000000;
+  color: #fff;
 }
 
 #submenu ul li.selected a, #submenu ul li a:hover {
