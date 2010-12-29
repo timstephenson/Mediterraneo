@@ -141,6 +141,85 @@ a:active, a.active {
   margin-right: 15px;
 }
 /* 
+  Blog styles  -----------------------------------------------------------------------------
+*/
+#blog {
+  background-color: transparent;
+  margin: -10px auto 0px auto;
+  padding: 20px;
+  width: 906px;
+  color: #848484;
+}
+#blog a:link, #blog a:visited {
+  color: #848484;
+  text-decoration: none;
+}
+#blog a:hover {
+  color: #666666;
+  }
+#blog a:active, #blog a.active {
+  color: #666666;
+}
+#blog #cap {
+  height: 68px;
+  background: url(/images/around-block-background_01.png) no-repeat;
+}
+#blog #body {
+  margin: 0px;
+  padding: 10px 40px;
+  background: url(/images/around-block-background_02.png) repeat-y;
+}
+#blog #toe {
+  height: 44px;
+  background: url(/images/around-block-background_04.png) repeat-y;
+}
+#blog-posts {
+  width: 625px;
+  min-height: 300px;
+  overflow: hidden;
+  padding-right: 10px;
+  border-right: 1px solid #cccccc;
+}
+#blog .blog_post {
+  margin-bottom: 15px;
+  border-top: 1px solid #eeeeee;
+}
+#blog-navigation {
+  width: 175px;
+  float:right;
+}
+#blog h1 {
+  text-transform: uppercase;
+  font-size: 115%;
+}
+#blog h2 {
+  color: #848484;
+  font-weight: normal;
+  font-size: 110%;
+  margin: 10px 0;
+}
+
+#blog ul {
+  padding: 0px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 90%;
+}
+
+#blog details {
+  font-size: 90%;
+}
+
+#blog ul li {
+  margin-left: 15px;
+}
+#blog #comments {
+  /*margin: 20px 0;*/
+}
+#blog .field {
+  margin: 10px 0;
+}
+
+/* 
   Footer styles  -----------------------------------------------------------------------------
 */
 #footer {
