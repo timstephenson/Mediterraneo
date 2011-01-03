@@ -4,6 +4,19 @@
   Formatting applies to all frontend.
 */
 
+@font-face {
+    font-family: "Andale";
+    src: url(/Andale-Mono.ttf) format("truetype");
+}
+h1 strong.font-size-large {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    font-weight: normal;
+    line-height: 130%;
+    font-family: "Andale", Arial, Tahoma;
+}
+
 body {
   font-family: "MS Trebuchet", Arial, sans-serif;
   font-size: 14px;
