@@ -1,8 +1,12 @@
 <% unless @page[:central_image].blank? %>
+  <section id='title_image'>
+    <%=raw @page[:title_image] %>
+  </section>
   <section id='central_image'>
     <%=raw @page[:central_image] %>
   </section>
 <% end %>
+
 <% content_for :body_content_left do %>
   <div class='inquiries'>
     <%=raw @page[Page.default_parts.first.to_sym] %>
@@ -36,4 +40,4 @@
     <% end %>
   </div>
 <% end %>
-<%= render :partial => "/shared/content_page" %>
+<%= render :partial => "/shared/content_page", :locals => {:remove_automatic_sections => true} %>
