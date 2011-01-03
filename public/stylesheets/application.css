@@ -8,9 +8,9 @@
     font-family: "Andale";
     src: url(/Andale-Mono.ttf) format("truetype");
 }
-h1 strong.font-size-large {
+h1.font-size-large {
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 2.20em;
     letter-spacing: 5px;
     font-weight: normal;
     line-height: 130%;
