@@ -66,6 +66,12 @@ a:active, a.active {
   color: #ffffff;
 }
 
+.clear {
+  clear:both;
+  height: 0px;
+  overflow: hidden;
+}
+
 /* 
   Header styles  -----------------------------------------------------------------------------
 */
@@ -178,14 +184,17 @@ a:active, a.active {
   Blog styles  -----------------------------------------------------------------------------
 */
 #blog {
+  float: left;
+  font-family: Verdana, Arial, sans-serif;
+  font-family: ;
   background-color: transparent;
-  margin: -10px auto 0px auto;
+  margin: -75px auto 0px auto;
   padding: 20px;
   width: 906px;
   color: #848484;
 }
 #blog a:link, #blog a:visited {
-  color: #848484;
+  color: #ababab;
   text-decoration: none;
 }
 #blog a:hover {
@@ -195,17 +204,21 @@ a:active, a.active {
   color: #666666;
 }
 #blog #cap {
-  height: 68px;
+  height: 66px;
   background: url(/images/around-block-background_01.png) no-repeat;
 }
 #blog #body {
   margin: 0px;
-  padding: 10px 40px;
+  padding: 0px 21px 0px 40px;
   background: url(/images/around-block-background_02.png) repeat-y;
 }
+#blog #body #content {
+  height: 500px;
+  overflow: auto;
+}
 #blog #toe {
-  height: 44px;
-  background: url(/images/around-block-background_04.png) repeat-y;
+  height: 43px;
+  background: url(/images/around-block-background_04.png) no-repeat bottom;
 }
 #blog-posts {
   width: 625px;
@@ -229,14 +242,15 @@ a:active, a.active {
 #blog h2 {
   color: #848484;
   font-weight: normal;
-  font-size: 110%;
-  margin: 10px 0;
+  font-size: 10px;
+  margin: 10px 0px 0px 0px;
 }
 
 #blog ul {
   padding: 0px;
   font-family: Verdana, Arial, sans-serif;
   font-size: 90%;
+  margin: 5px 0 10px 0;
 }
 
 #blog details {
@@ -244,7 +258,10 @@ a:active, a.active {
 }
 
 #blog ul li {
-  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-left: 0px;
+  list-style: none;
 }
 #blog #comments {
   /*margin: 20px 0;*/
@@ -252,6 +269,16 @@ a:active, a.active {
 #blog .field {
   margin: 10px 0;
 }
+
+#blog  #rss_feed_subscribe {
+  text-transform: uppercase;
+  font-size: 10px;
+  width: 80px;
+  background: url(http://localhost:3000/images/refinerycms-blog/rss-feed.png) no-repeat right;
+  display: block;
+  padding-left: 0px;
+}
+
 
 /* 
   Inquiries styles  -----------------------------------------------------------------------------
@@ -296,9 +323,9 @@ a:active, a.active {
   color: #696962;
 }
 #footer #copyright {
-  width: 225px;
+  width: 200px;
   float: left;
 }
 #footer #description {
-  margin-left: 250px;
+  margin-left: 220px;
 }

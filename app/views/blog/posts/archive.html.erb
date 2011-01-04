@@ -1,19 +1,21 @@
 <section id="blog">
   <div id="cap"> </div>
   <div id="body">
-    <section id="blog-navigation">
-      <%= render :partial => "/blog/shared/categories" %>
-      <%= render :partial => "/blog/shared/rss_feed" %>
-      <%= blog_archive_list %>
-    </section>
+    <div id="content">
+      <section id="blog-navigation">
+        <%= render :partial => "/blog/shared/categories" %>
+        <%= render :partial => "/blog/shared/rss_feed" %>
+        <%= blog_archive_list %>
+      </section>
     
-    <section id="blog-posts">
-      <h1>Blog Archive for <%= @archive_date.strftime('%B %Y') %></h1>
-      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-    </section>
+      <section id="blog-posts">
+        <h1>Blog Archive for <%= @archive_date.strftime('%B %Y') %></h1>
+        <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+      </section>
     
-    <%= "There are no blog articles posted for #{@archive_date.strftime('%B %Y')}. Stay tuned." unless @blog_posts.any? %>
-    <%# TODO: Add locale logic here - hubble is a n00b at that %>
+      <%= "There are no blog articles posted for #{@archive_date.strftime('%B %Y')}. Stay tuned." unless @blog_posts.any? %>
+      <%# TODO: Add locale logic here - hubble is a n00b at that %>
+    </div>
   </div>
   
   <div id="toe"> </div>

@@ -1,23 +1,26 @@
 <% content_for :body_content_title, @category.title %>
-
+  
 <section id="blog">
   <div id="cap"> </div>
   <div id="body">
-    <section id="blog-navigation">
-    <%= render :partial => "/blog/shared/categories" %>
-    </section>
+       <div id="content">
+        <section id="blog-navigation">
+          <%= render :partial => "/blog/shared/categories" %>
+          <%= render :partial => "/blog/shared/rss_feed" %>
+          <%= blog_archive_list %>
+        </section>
     
-    <section id="blog-posts">
-      <% if @category.posts.any? %>
-        <%= render :partial => "/blog/shared/post", :collection => @category.posts %>
-      <% else %>
-        <p>
-          <%= t('.no_posts') %>
-        </p>
-      <% end %>
-    </section>
-    
-  </div>
+        <section id="blog-posts">
+          <% if @category.posts.any? %>
+            <%= render :partial => "/blog/shared/post", :collection => @category.posts %>
+          <% else %>
+            <p>
+              <%= t('.no_posts') %>
+            </p>
+          <% end %>
+        </section>
+      </div>
+    </div>
   <div id="toe"></div>
 </section>
 
