@@ -42,7 +42,9 @@
 <% content_for :head do %>
 <script>
 $(document).ready(function(){
-  //$("#project").hide();
+
+  $("#body").fadeTo(0, 0.0);
+
   $("#project #right").fadeTo(0, 0.4);
   $("#project .thumbnail").fadeTo(0, 0.6);
   $("#project #thumbnails").hide();
@@ -72,8 +74,8 @@ $(document).ready(function(){
         $("#project .image").fadeTo("slow", 0.0);
         $("#project .image").hide("slow");
       });
+    $("#body").fadeTo(1500, 1.0);
  });
- 
  
 </script>
 <% end %>
