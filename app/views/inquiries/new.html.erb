@@ -33,11 +33,13 @@
         <%= f.required_label :message  %>
         <%= f.text_area :message, :rows => 8 %>
       </div>
+      <div class="required-label">* Required</div>
       <div class='actions'>
         <%= f.submit t('.send') %>
         <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
       </div>
+      
     <% end %>
   </div>
 <% end %>
-<%= render :partial => "/shared/content_page", :locals => {:remove_automatic_sections => true} %>
+<%= render :partial => "/shared/content_page", :locals => {:hide_sections => [:body_content_title]} %>

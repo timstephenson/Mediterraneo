@@ -13,8 +13,17 @@ h1.font-size-large {
     font-size: 2.20em;
     letter-spacing: 5px;
     font-weight: normal;
-    line-height: 130%;
+    line-height: 127%;
     font-family: "Andale", Arial, Tahoma;
+}
+h1.font-size-normal {
+    text-transform: uppercase;
+    font-size: 2.20em;
+    letter-spacing: 5px;
+    font-weight: normal;
+    line-height: 127%;
+    font-family: "Andale", Arial, Tahoma;
+    margin-top: -14px;
 }
 
 body {
@@ -243,12 +252,33 @@ a:active, a.active {
 /* 
   Inquiries styles  -----------------------------------------------------------------------------
 */
+.inquiries {
+  width: 435px;
+}
 .inquiries form label {
+    color: #fff;
     float: left;
-    width: 90px;
+    width: 75px;
+    font-size: 10px;
+    text-transform: uppercase;
 }
 .inquiries form .actions {
-    margin-left: 90px;
+    margin-left: 75px;
+    margin-top: -5px;
+}
+
+.inquiries form input[type=text] {
+  width: 353px;
+}
+
+.inquiries .required-label {
+  float: right;
+  color: #fff;
+  font-size: 10px;
+}
+
+.inquiries form textarea {
+  width: 353px;
 }
 
 /* 
