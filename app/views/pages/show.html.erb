@@ -4,12 +4,26 @@
 <section id='central_image'>
   <% unless @page.parent.blank? %>
     <% if @page.parent.title.downcase == "projects" %>
-    
+      
+      <div id="left-arrow"><a href="/projects/jones"><%= image_tag "/images/left-arrow-nav.png" %></a></div>
+      <div id="right-arrow"><a href="/projects/weiss"><%= image_tag "/images/right-arrow-nav.png" %></a></div>
       <div id="project">
         
         <div id="left"><%= image_tag "/images/casay-left.jpg" %></div>
         <div id="center"> </div>
         <div id="right"><%= image_tag "/images/casay-right.jpg" %></div>
+        
+        <div id="thumbnails-bkd">
+          <div class="thumbnail"></div>
+          <div class="thumbnail-bkd"></div>
+          <div class="thumbnail-bkd"></div>
+          <div class="thumbnail"></div>
+          <div class="clear"></div>
+          <div class="thumbnail-bkd"></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail-bkd"></div>
+          <div class="thumbnail-bkd"></div>
+        </div>
         
         <div id="thumbnails">
           <div class="thumbnail"></div>
@@ -46,8 +60,9 @@ $(document).ready(function(){
   $("#body").fadeTo(0, 0.0);
 
   $("#project #right").fadeTo(0, 0.4);
-  $("#project .thumbnail").fadeTo(0, 0.6);
+  $("#project .thumbnail").fadeTo(0, 0.4);
   $("#project #thumbnails").hide();
+  $("#project #thumbnails-bkd").hide();
   $("#project .image").hide();
   
   $("#project #right").mouseover(function(){
@@ -59,11 +74,12 @@ $(document).ready(function(){
    $("#project .thumbnail").mouseover(function(){
       $(this).fadeTo('slow', 1.0);
     }).mouseout(function(){
-      $(this).fadeTo('slow', 0.6);
+      $(this).fadeTo('slow', 0.4);
     });
    
    $('#project #right').click(function (){
      $("#project #thumbnails").slideToggle("slow");
+     $("#project #thumbnails-bkd").slideToggle("slow");
    });
    
    $('#project .thumbnail').click(function (){
@@ -74,7 +90,13 @@ $(document).ready(function(){
         $("#project .image").fadeTo("slow", 0.0);
         $("#project .image").hide("slow");
       });
+      
     $("#body").fadeTo(1500, 1.0);
+    
+    $('#submenu a, #menu a, #left-arrow, #right-arrow').click(function (){
+        $("#body").fadeTo(500, 0.0);
+    });
+    
  });
  
 </script>
