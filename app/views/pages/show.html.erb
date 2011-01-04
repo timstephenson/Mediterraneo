@@ -2,22 +2,78 @@
   <%=raw @page[:title_image] %>
 </section>
 <section id='central_image'>
-  <%=raw @page[:central_image] %>
-</section>
-<section id='body_content'>
   <% unless @page.parent.blank? %>
     <% if @page.parent.title.downcase == "projects" %>
     
       <div id="project">
-        <div id="left">a</div>
-        <div id="center">b</div>
-        <div id="right">c</div>
+        
+        <div id="left"><%= image_tag "/images/casay-left.jpg" %></div>
+        <div id="center"> </div>
+        <div id="right"><%= image_tag "/images/casay-right.jpg" %></div>
+        
+        <div id="thumbnails">
+          <div class="thumbnail"></div>
+          <div class="thumbnail"><%= image_tag "/images/casay-thumb_02.jpg" %></div>
+          <div class="thumbnail"><%= image_tag "/images/casay-thumb_03.jpg" %></div>
+          <div class="thumbnail"></div>
+          <div class="clear"></div>
+          <div class="thumbnail"><%= image_tag "/images/casay-thumb_05.jpg" %></div>
+          <div class="thumbnail"></div>
+          <div class="thumbnail"><%= image_tag "/images/casay-thumb_07.jpg" %></div>
+          <div class="thumbnail"><%= image_tag "/images/casay-thumb_08.jpg" %></div>
+        </div>
+        
+        <div class="image"><%= image_tag "/images/casay-image_02.jpg" %></div>
+        
       </div>
       
     <% end %>
   <% end %>
+  <%=raw @page[:central_image] %>
+</section>
+<section id='body_content'>
   <%=raw @page[:body] %>
 </section>
 <section id='side_body_content'>
   <%=raw @page[:contact_info] %>
 </section>
+
+<% content_for :head_libraries, jquery_include_tags(:jquery_ui => true) %>
+<% content_for :head do %>
+<script>
+$(document).ready(function(){
+  //$("#project").hide();
+  $("#project #right").fadeTo(0, 0.4);
+  $("#project .thumbnail").fadeTo(0, 0.6);
+  $("#project #thumbnails").hide();
+  $("#project .image").hide();
+  
+  $("#project #right").mouseover(function(){
+     $(this).fadeTo('slow', 1.0);
+   }).mouseout(function(){
+     $(this).fadeTo('slow', 0.4);
+   });
+   
+   $("#project .thumbnail").mouseover(function(){
+      $(this).fadeTo('slow', 1.0);
+    }).mouseout(function(){
+      $(this).fadeTo('slow', 0.6);
+    });
+   
+   $('#project #right').click(function (){
+     $("#project #thumbnails").slideToggle("slow");
+   });
+   
+   $('#project .thumbnail').click(function (){
+      $("#project .image").fadeTo("slow", 1.0);
+    });
+    
+    $('#project .image').click(function (){
+        $("#project .image").fadeTo("slow", 0.0);
+        $("#project .image").hide("slow");
+      });
+ });
+ 
+ 
+</script>
+<% end %>
