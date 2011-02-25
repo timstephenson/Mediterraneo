@@ -51,6 +51,10 @@ h3 {
   font-size: 11px;
   line-height: 130%;
 }
+p {
+  font-size: 12px;
+  line-height: 125%;
+}
 
 a img {
   border: none;
@@ -92,9 +96,11 @@ a:active, a.active {
   list-style: none;
   margin-top: 0px;
   padding: 0px;
+  position: relative;
   float: right;
   font-family: Verdana, Arial, sans-serif;
   font-size: 9px;
+  z-index: 10000;
 }
 
 #menu ul li {
@@ -364,7 +370,21 @@ a:active, a.active {
   background-color: #9a9a94;
   padding: 10px;
 }
-
+#project .vertical {
+  margin-top: -195px;
+  margin-left: 121px;
+}
+#project .close-button {
+  width: 20px; 
+  height: 20px; 
+  background-color: #696962; 
+  position: absolute; 
+  right: 10px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  padding-top:3px;
+}
 #left-arrow {
   margin: 0;
   float: left;
@@ -378,6 +398,7 @@ a:active, a.active {
   width: 16px;
   margin-right: 120px;
 }
+
 
 /* 
   Footer styles  -----------------------------------------------------------------------------

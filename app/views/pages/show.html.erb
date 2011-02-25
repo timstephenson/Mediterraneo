@@ -2,51 +2,6 @@
   <%=raw @page[:title_image] %>
 </section>
 <section id='central_image'>
-  <% unless @page.parent.blank? %>
-    <% if @page.parent.title.downcase == "projects-delete" %>
-      
-      <div id="left-arrow"><a href="/projects/jones"><%= image_tag "/images/left-arrow-nav.png" %></a></div>
-      <div id="right-arrow"><a href="/projects/weiss"><%= image_tag "/images/right-arrow-nav.png" %></a></div>
-      <div id="project">
-        
-        <div id="left"><%= image_tag "/images/casay-left.jpg" %></div>
-        <div id="center"> </div>
-        <div id="right"><%= image_tag "/images/casay-right.jpg" %></div>
-        
-        <div id="thumbnails-bkd">
-          <div class="thumbnail"></div>
-          <div class="thumbnail-bkd"></div>
-          <div class="thumbnail-bkd"></div>
-          <div class="thumbnail"></div>
-          <div class="clear"></div>
-          <div class="thumbnail-bkd"></div>
-          <div class="thumbnail"></div>
-          <div class="thumbnail-bkd"></div>
-          <div class="thumbnail-bkd"></div>
-        </div>
-        
-        <div id="thumbnails">
-          <div class="thumbnail"></div>
-          <div id="thumb_1" class="thumbnail"><%= image_tag "/images/casay-thumb_02.jpg" %></div>
-          <div id="thumb_2" class="thumbnail"><%= image_tag "/images/casay-thumb_03.jpg" %></div>
-          <div class="thumbnail"></div>
-          <div class="clear"></div>
-          <div id="thumb_3" class="thumbnail"><%= image_tag "/images/casay-thumb_05.jpg" %></div>
-          <div class="thumbnail"></div>
-          <div id="thumb_4" class="thumbnail"><%= image_tag "/images/casay-thumb_07.jpg" %></div>
-          <div id="thumb_5" class="thumbnail"><%= image_tag "/images/casay-thumb_08.jpg" %></div>
-        </div>
-        
-        <div id="image_1" class="image"><%= image_tag "/images/casay-image_01.jpg" %></div>
-        <div id="image_2" class="image"><%= image_tag "/images/casay-image_02.jpg" %></div>
-        <div id="image_3" class="image"><%= image_tag "/images/casay-image_02.jpg" %></div>
-        <div id="image_4" class="image"><%= image_tag "/images/casay-image_02.jpg" %></div>
-        <div id="image_5" class="image"><%= image_tag "/images/casay-image_02.jpg" %></div>
-        
-      </div>
-      
-    <% end %>
-  <% end %>
   <%=raw @page[:central_image] %>
 </section>
 <section id='body_content'>
@@ -63,8 +18,8 @@ $(document).ready(function(){
 
   $("#body").fadeTo(0, 0.0);
 
-  $("#project #right").fadeTo(0, 0.5);
-  $("#project .thumbnail").fadeTo(0, 0.5);
+  $("#project #right").fadeTo(0, 0.7);
+  $("#project .thumbnail").fadeTo(0, 0.7);
   $("#project #thumbnails").hide();
   $("#project #thumbnails-bkd").hide();
   $("#project .image").hide();
@@ -72,13 +27,13 @@ $(document).ready(function(){
   $("#project #right").mouseover(function(){
      $(this).fadeTo('slow', 1.0);
    }).mouseout(function(){
-     $(this).fadeTo('slow', 0.5);
+     $(this).fadeTo('slow', 0.7);
    });
    
    $("#project .thumbnail").mouseover(function(){
       $(this).fadeTo('slow', 1.0);
     }).mouseout(function(){
-      $(this).fadeTo('slow', 0.5);
+      $(this).fadeTo('slow', 0.7);
     });
    
    $('#project #right').click(function (){
@@ -91,7 +46,7 @@ $(document).ready(function(){
       $("#project #image_" + id).fadeTo("slow", 1.0);
     });
     
-    $('#project .image').click(function (){
+    $('#project .close-button').click(function (){
         $("#project .image").fadeTo("slow", 0.0);
         $("#project .image").hide("slow");
       });

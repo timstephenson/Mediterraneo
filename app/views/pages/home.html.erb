@@ -1,4 +1,42 @@
-<section id='body_content'>
+<% content_for :head_libraries, jquery_include_tags(:jquery_ui => true) %>
+<% content_for :head_libraries, javascript_include_tag("jquery-animate-colors") %>
+<% content_for :head_libraries, javascript_include_tag("swf") %>
+
+<section id='home'>
+  <script language="JavaScript" type="text/javascript">
+    function fadeBody(to_color) {
+      $('body').animate({backgroundColor: to_color}, 1500);
+    }
+  		AC_FL_RunContent(
+    		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
+    		'width', '1100',
+    		'height', '688',
+    		'src', 'med-intro-As2',
+    		'quality', 'high',
+    		'pluginspage', 'http://www.adobe.com/go/getflashplayer',
+    		'align', 'middle',
+    		'play', 'true',
+    		'loop', 'true',
+    		'scale', 'showall',
+    		'wmode', 'transparent',
+    		'devicefont', 'false',
+    		'id', 'med-intro-As2',
+    		'bgcolor', '#ac3c0b',
+    		'name', 'med-intro-As2',
+    		'menu', 'true',
+    		'allowFullScreen', 'false',
+    		'allowScriptAccess','sameDomain',
+    		'movie', '/images/med-intro-As2',
+    		'salign', ''
+    		); //end AC code
+    </script>
+    <noscript>
+    	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" width="1100" height="688" id="med-intro-As2" align="middle">
+    	<param name="allowScriptAccess" value="sameDomain" />
+    	<param name="allowFullScreen" value="false" />
+    	<param name="movie" value="/images/med-intro-As2.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ac3c0b" />	<embed src="/images/med-intro-As2.swf" quality="high" wmode="transparent" bgcolor="#ac3c0b" width="1100" height="688" name="med-intro-As2" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+    	</object>
+    </noscript>
   <%=raw @page[:body] %>
 </section>
 

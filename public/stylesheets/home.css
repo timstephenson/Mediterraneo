@@ -1,7 +1,7 @@
 @import url('/stylesheets/refinery/home.css');
 
 body {
-  background-color: #d35d20;
+  background-color: #AC3C0B;
 }
 
 a:link, a:visited {
@@ -27,6 +27,10 @@ a:active, a.active {
 */
 #body {
   min-height: 500px;
+}
+#home {
+  margin-left: -22px;
+  margin-top: -33px;
 }
 /* 
   Footer styles  -----------------------------------------------------------------------------
