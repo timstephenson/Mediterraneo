@@ -7,7 +7,7 @@
              :locals => {
                 :dom_id => 'menu',
                 :css => 'menu',
-                :collection => @menu_pages,
+                :collection => @menu_pages.reject{|p| p.title == "HOME"  },
                 :hide_children => true
              } -%>
 

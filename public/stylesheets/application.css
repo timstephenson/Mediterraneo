@@ -98,6 +98,7 @@ a:active, a.active {
   padding: 0px;
   position: relative;
   float: right;
+  margin-right: -27px;
   font-family: Verdana, Arial, sans-serif;
   font-size: 9px;
   z-index: 10000;
@@ -110,7 +111,7 @@ a:active, a.active {
 
 #menu ul li a {
   display: block;
-  padding: 5px 10px;
+  padding: 5px 17px;
   text-decoration: none;
   color: #000000;
 }
@@ -411,7 +412,7 @@ a:active, a.active {
   color: #696962;
 }
 #footer #copyright {
-  width: 150px;
+  width: 165px;
   float: left;
 }
 #footer #description {

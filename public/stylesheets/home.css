@@ -29,6 +29,7 @@ a:active, a.active {
   min-height: 500px;
 }
 #home {
+  float:left;
   margin-left: -22px;
   margin-top: -33px;
 }
