@@ -60,7 +60,7 @@ a img {
   border: none;
 }
 a:link, a:visited {
-  color: #d35d20;
+  color: #AC3C0B;
   text-decoration: none;
 }
 a:hover {
@@ -86,7 +86,7 @@ a:active, a.active {
 #logo-box {
   width: 110px;
   height: 110px;
-  background-color: #d35d20;
+  background-color: #AC3C0B;
   margin: -42px 0px 0px 175px;
 }
 /* 
@@ -337,7 +337,7 @@ a:active, a.active {
   margin: 0;
 }
 #project #center {
-  background-color: #d35d20;
+  background-color: #AC3C0B;
 }
 #project #right {
   cursor: pointer;
@@ -405,7 +405,7 @@ a:active, a.active {
   Footer styles  -----------------------------------------------------------------------------
 */
 #footer {
-  border-top: 1px solid #d35d20;
+  border-top: 1px solid #AC3C0B;
   padding-top: 25px;
   font-size: 10px;
   line-height: 115%;
