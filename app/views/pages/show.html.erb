@@ -3,6 +3,9 @@
 </section>
 <section id='central_image'>
   <%=raw @page[:central_image] %>
+  <div id="project-description">
+    <%=raw @page[:description] %>
+  </div>
 </section>
 <section id='body_content'>
   <%=raw @page[:body] %>
@@ -23,6 +26,7 @@ $(document).ready(function(){
   $("#project #thumbnails").hide();
   $("#project #thumbnails-bkd").hide();
   $("#project .image").hide();
+  $("#project-description").hide();
   
   $("#project #right").mouseover(function(){
      $(this).fadeTo('slow', 1.0);
@@ -39,6 +43,7 @@ $(document).ready(function(){
    $('#project #right').click(function (){
      $("#project #thumbnails").slideToggle("slow");
      $("#project #thumbnails-bkd").slideToggle("slow");
+     $("#project-description").slideToggle("slow");
    });
    
    $('#project .thumbnail').click(function (){

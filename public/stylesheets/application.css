@@ -60,7 +60,7 @@ a img {
   border: none;
 }
 a:link, a:visited {
-  color: #AC3C0B;
+  color: ##BC4F07;;
   text-decoration: none;
 }
 a:hover {
@@ -86,7 +86,7 @@ a:active, a.active {
 #logo-box {
   width: 110px;
   height: 110px;
-  background-color: #AC3C0B;
+  background-color: #BC4F07;
   margin: -42px 0px 0px 175px;
 }
 /* 
@@ -337,7 +337,7 @@ a:active, a.active {
   margin: 0;
 }
 #project #center {
-  background-color: #AC3C0B;
+  background-color: #BC4F07;
 }
 #project #right {
   cursor: pointer;
@@ -370,6 +370,7 @@ a:active, a.active {
   margin-left: 20px;
   background-color: #9a9a94;
   padding: 10px;
+  z-index: 1000;
 }
 #project .vertical {
   margin-top: -210px;
@@ -385,6 +386,16 @@ a:active, a.active {
   text-align: center;
   cursor: pointer;
   padding-top:3px;
+}
+#project-description {
+  background-color: #9a9a94;
+  position: absolute;
+  font-weight: normal;
+  font-size:14px;
+  width: 455px;
+  margin-left: 330px;
+  margin-top: 45px;
+  padding-bottom: 150px;
 }
 #left-arrow {
   margin: 0;
@@ -405,7 +416,7 @@ a:active, a.active {
   Footer styles  -----------------------------------------------------------------------------
 */
 #footer {
-  border-top: 1px solid #AC3C0B;
+  border-top: 1px solid #BC4F07;
   padding-top: 25px;
   font-size: 10px;
   line-height: 115%;
