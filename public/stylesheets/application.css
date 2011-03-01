@@ -164,6 +164,7 @@ a:active, a.active {
 #body_content {
   width: 460px;
   margin: 43px 0px 50px 505px;
+  min-height: 100px;
 }
 #body_content_left {
   width: 460px;
@@ -395,7 +396,7 @@ a:active, a.active {
   width: 455px;
   margin-left: 330px;
   margin-top: 45px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 #left-arrow {
   margin: 0;
