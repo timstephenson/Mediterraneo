@@ -62,6 +62,17 @@ $(document).ready(function(){
         $("#body").fadeTo(500, 0.0);
     });
     
+    // free report link image swap
+    // preload the image
+    var report_image_over = $('<img />').attr('src', '/images/free-report-box-over.png');
+    var report_image = $('<img />').attr('src', '/images/free-report-box.png');
+    
+    $('#free_report_link').mouseover(function() {
+      $("#free_report").attr("src", "/images/free-report-box-over.png");
+    }).mouseout(function(){
+      $("#free_report").attr("src", "/images/free-report-box.png");
+    });
+        
  });
  
 </script>
