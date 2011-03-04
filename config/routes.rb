@@ -11,6 +11,7 @@ Refinery::Application.routes.draw do
   end
   
   match '/system/images/*dragonfly', :to => Dragonfly[:images]
+  match '/system/resources/*dragonfly', :to => Dragonfly[:resources]
   
 
   # Marketable URLs should be appended to routes by the Pages Engine.
