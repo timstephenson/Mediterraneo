@@ -199,13 +199,13 @@ a:active, a.active {
   Blog styles  -----------------------------------------------------------------------------
 */
 #blog {
-  float: left;
+  position: relative;
   font-family: Verdana, Arial, sans-serif;
-  font-family: ;
   background-color: transparent;
   margin: -75px auto 0px auto;
   padding: 20px;
-  width: 906px;
+  padding-left: 50px;
+  width: 666px;
   color: #848484;
 }
 #blog a:link, #blog a:visited {
@@ -220,12 +220,12 @@ a:active, a.active {
 }
 #blog #cap {
   height: 66px;
-  background: url(/images/around-block-background_01.png) no-repeat;
+  background: url(/images/around-block-background-620_01.png) no-repeat;
 }
 #blog #body {
   margin: 0px;
-  padding: 0px 21px 0px 40px;
-  background: url(/images/around-block-background_02.png) repeat-y;
+  padding: 0px 23px 0px 40px;
+  background: url(/images/around-block-background-620_02.png) repeat-y;
 }
 #blog #body #content {
   height: 500px;
@@ -233,10 +233,10 @@ a:active, a.active {
 }
 #blog #toe {
   height: 43px;
-  background: url(/images/around-block-background_04.png) no-repeat bottom;
+  background: url(/images/around-block-background-620_04.png) no-repeat bottom;
 }
 #blog-posts {
-  width: 625px;
+  width: 425px;
   min-height: 300px;
   overflow: hidden;
   padding-right: 10px;
@@ -247,12 +247,12 @@ a:active, a.active {
   border-top: 1px solid #eeeeee;
 }
 #blog-navigation {
-  width: 175px;
+  width: 145px;
   float:right;
 }
 #blog h1 {
   text-transform: uppercase;
-  font-size: 115%;
+  font-size: 110%;
 }
 #blog h2 {
   color: #848484;
