@@ -50,6 +50,12 @@ jQuery(document).ready(function(){
      jQuery("#project #thumbnails").slideToggle("slow");
      jQuery("#project #thumbnails-bkd").slideToggle("slow");
      jQuery("#project-description").slideToggle("slow");
+     var opacity = jQuery("#body_content").css("opacity");
+     if (opacity == 1){
+       jQuery("#body_content").fadeTo("slow", 0.0);
+     }else{
+       jQuery("#body_content").fadeTo("slow", 1.0);
+     }
    });
    
    jQuery('#project .thumbnail').click(function (){
