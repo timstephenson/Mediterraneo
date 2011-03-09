@@ -1,0 +1,50 @@
+#logo a img {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+}
+
+#logo-box {
+  margin-top: -18px;
+}
+
+#menu ul {
+  margin-right: -40px;
+}
+
+#menu ul li {
+  margin-right: 0px;
+}
+
+#submenu ul {
+  margin-top: -20px;
+  margin-left: 5px;
+}
+
+#body {
+  width: 100%;
+}
+
+#project #thumbnails {
+  margin-left: -660px;
+  width: 440px;
+}
+
+#project #thumbnails-bkd {
+  margin-left: -660px;
+  width: 440px;
+}
+
+#project .image {
+  margin-left: -640px;
+}
+#project .vertical {
+  margin-top: -190px;
+  margin-left: -540px;
+}
+
+#blog #body {
+  width: 603px;
+  padding: 0px 23px 0px 40px;
+}
+
