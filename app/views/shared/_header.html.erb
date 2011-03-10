@@ -1,13 +1,14 @@
 <div id='header_content'>  
   <div id="logo">
-    <%= link_to(image_tag("/images/med-logo.png", :alt => "Mediterraneo Design Build"), root_url(:only_path => true)) %>
+    <%= link_to(image_tag("/images/med-logo.png", :alt => "Mediterraneo Design Build"), "/home") %>
     <div id="logo-box"> </div>
   </div>
+  
   <%= render :partial => "/shared/menu",
              :locals => {
                 :dom_id => 'menu',
                 :css => 'menu',
-                :collection => @menu_pages.reject{|p| p.title == "HOME"  },
+                :collection => @menu_pages,
                 :hide_children => true
              } -%>
 
@@ -19,4 +20,5 @@
                   :collection => @menu_pages.reject{|p| !p.self_and_ancestors.map(&:id).include?(@page.root.id) },
                   :extra_suffix => 'submenu'
                 } -%>
+                
 </div>

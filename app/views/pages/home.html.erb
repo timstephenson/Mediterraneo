@@ -1,11 +1,12 @@
 <% content_for :head_libraries, jquery_include_tags(:jquery_ui => true) %>
 <% content_for :head_libraries, javascript_include_tag("jquery-animate-colors") %>
-<% content_for :head_libraries, javascript_include_tag("swf") %>
+<% content_for :head_libraries, javascript_include_tag("application", "swf") %>
 
 <section id='home'>
   <script language="JavaScript" type="text/javascript">
-    function fadeBody(to_color) {
-      $('body').animate({backgroundColor: to_color}, 1500);
+    function loadHome() {
+      jQuery("#body").fadeTo(500, 0.0);
+      document.location.href = "/home";
     }
   		AC_FL_RunContent(
     		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
