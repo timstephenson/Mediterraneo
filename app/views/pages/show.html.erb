@@ -19,7 +19,34 @@
 <% content_for :head_libraries, javascript_include_tag('application') %>
 
 <% content_for :head do %>
-<script src="http://www.apple.com/library/quicktime/2.0/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
-<script src="http://www.apple.com/library/quicktime/2.0/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
-<link href="http://www.apple.com/library/quicktime/2.0/stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+  <script src="http://www.apple.com/library/quicktime/2.0/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
+  <script src="http://www.apple.com/library/quicktime/2.0/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
+  <link href="http://www.apple.com/library/quicktime/2.0/stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+  <% if @page.title == "Home" %>
+    <style type="text/css">
+     #logo {
+       display: none;
+     }
+     #submenu ul {
+       margin-top: -32px;
+       margin-left: 0px;
+     }
+
+     #submenu ul li a {
+       color: #000;
+     }
+
+     #submenu ul li.selected a, #submenu ul li a:hover {
+       color: #fff;
+       background: none;
+     }
+    </style>
+  <% end %>
+  <% if @page.title == "BUILD IT TRUE" %>
+  <style type="text/css">
+   #submenu {
+     display: none;
+   }
+  </style>
+  <% end %>
 <% end %>
