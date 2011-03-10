@@ -35,29 +35,22 @@ jQuery(document).ready(function(){
    
    jQuery('#project .thumbnail').click(function (){
       var id = jQuery(this).attr('id').split("_")[1];
+      jQuery("#left-arrow").fadeOut("slow");
+      jQuery("#right-arrow").fadeOut("slow");
       jQuery("#project #image_" + id).fadeTo("slow", 1.0);
     });
     
     jQuery('#project .close-button').click(function (){
-        jQuery("#project .image").fadeTo("slow", 0.0);
-        jQuery("#project .image").hide("slow");
-      });
+      jQuery("#left-arrow").fadeIn("slow");
+      jQuery("#right-arrow").fadeIn("slow");
+      jQuery("#project .image").fadeTo("slow", 0.0);
+      jQuery("#project .image").hide("slow");
+    });
       
     jQuery("#body").fadeTo(1500, 1.0);
     
     jQuery('#submenu a, #menu a, #left-arrow, #right-arrow').click(function (){
         jQuery("#body").fadeTo(500, 0.0);
-    });
-    
-    // free report link image swap
-    // preload the image
-    var report_image_over = jQuery('<img />').attr('src', '/images/free-report-box-over.png');
-    var report_image = jQuery('<img />').attr('src', '/images/free-report-box.png');
-    
-    jQuery('#free_report_link').mouseover(function() {
-      jQuery("#free_report").attr("src", "/images/free-report-box-over.png");
-    }).mouseout(function(){
-      jQuery("#free_report").attr("src", "/images/free-report-box.png");
     });
     
     jQuery("#video-player").replaceWith("<a href='/videos/WEB%20VERSION_458x258.mov' rel='qtposter' jscontroller='false'><img src='/videos/WEB%20VERSION_458x258.jpg' width='458' height='274'/></a>");
