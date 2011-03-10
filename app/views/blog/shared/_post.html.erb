@@ -4,7 +4,7 @@
       <h1><%= link_to post.title, blog_post_url(post) %></h1>
       <details>
         <time datetime="<%= post.published_at.strftime('%Y-%m-%d') %>" class='posted_at'>
-          <%= t('blog.shared.posts.created_at', :when => post.published_at.strftime('%d %B %Y')) %>.
+          <%= post.published_at.strftime('%m.%d.%Y') %>
         </time>
         <% if (categories = post.categories).any? %>
           <aside class='filed_in'>

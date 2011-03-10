@@ -244,7 +244,7 @@ a:active, a.active {
 }
 #blog .blog_post {
   margin-bottom: 15px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #cccccc;
 }
 #blog-navigation {
   width: 145px;
@@ -252,13 +252,25 @@ a:active, a.active {
 }
 #blog h1 {
   text-transform: uppercase;
-  font-size: 110%;
+  font-size: 11px;
+  font-weight: normal;
+  margin-bottom: 0px;
 }
 #blog h2 {
   color: #848484;
   font-weight: normal;
   font-size: 10px;
   margin: 10px 0px 0px 0px;
+}
+#blog h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+#blog p {
+  font-size: 12px;
+  margin: .5em 0;
 }
 
 #blog ul {
@@ -281,6 +293,9 @@ a:active, a.active {
 #blog #comments {
   /*margin: 20px 0;*/
 }
+#blog #comments h2 {
+  color: #bc4f07;
+}
 #blog .field {
   margin: 10px 0;
 }
@@ -293,8 +308,30 @@ a:active, a.active {
   display: block;
   padding-left: 0px;
 }
-
-
+.posted_at {
+  font-size: 10px;
+  color: #bc4f07;
+}
+.comment_count {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #ababab;
+}
+#next_prev_article {
+  font-size: 10px;
+}
+.blog_comment_message {
+  margin-bottom: 15px;
+}
+.blog_comment_author {
+  color: #cccccc;
+}
+.field label {
+  font-size: 10px;
+}
+#blog_posts li {
+  margin-bottom: 10px;
+}
 /* 
   Inquiries styles  -----------------------------------------------------------------------------
 */
