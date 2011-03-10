@@ -4,9 +4,17 @@
 <section id='central_image'>
   <%=raw @page[:central_image] %>
   
+  <% unless @page[:worker_info].blank? %>
+  <div id="worker-info">
+     <%=raw @page[:worker_info] %>
+  </div>
+  <% end %>
+  
+  <% unless @page[:description].blank? %>
   <div id="project-description">
     <%=raw @page[:description] %>
   </div>
+  <% end %>
 </section>
 <section id='body_content'>
   <%=raw @page[:body] %>

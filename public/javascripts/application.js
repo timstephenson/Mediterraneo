@@ -28,8 +28,10 @@ jQuery(document).ready(function(){
      var opacity = jQuery("#body_content").css("opacity");
      if (opacity == 1){
        jQuery("#body_content").fadeTo("slow", 0.0);
+       jQuery("#worker-info").fadeTo("slow", 0.0);
      }else{
        jQuery("#body_content").fadeTo("slow", 1.0);
+       jQuery("#worker-info").fadeTo("slow", 1.0);
      }
    });
    

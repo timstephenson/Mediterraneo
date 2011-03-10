@@ -48,7 +48,9 @@ h2 {
   margin: 24px 0px;
 }
 h2.font-size-small {
+  font-size: 9px;
   margin: 0;
+  line-height: 150%;
 }
 h3 {
   font-size: 11px;
@@ -172,6 +174,10 @@ a:active, a.active {
   width: 460px;
   margin: 43px 0px 50px 505px;
   min-height: 125px;
+}
+#worker-info {
+  float:left;
+  margin: 46px 0px 50px 0px;
 }
 #body_content_left {
   width: 460px;
