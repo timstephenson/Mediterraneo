@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-
+  jQuery("#build-it-true").hide();
   jQuery("#body").fadeTo(0, 0.0);
 
   jQuery("#project #right").fadeTo(0, 0.7);
@@ -53,6 +53,24 @@ jQuery(document).ready(function(){
     
     jQuery('#submenu a, #menu a, #left-arrow, #right-arrow').click(function (){
         jQuery("#body").fadeTo(500, 0.0);
+    });
+    
+    //home page animations
+    
+    jQuery('#submenu-home a').click(function (e){
+        e.preventDefault();
+        var logo_opacity = jQuery("#mdb-logo-large").css("opacity");
+        if (logo_opacity == 1){
+          jQuery("#build-it-true").fadeTo(1000, 1.0);
+          jQuery("#mdb-logo-large").fadeTo(1000, 0.0);
+          //change link text
+          jQuery("#submenu-home a").text("HOME")
+        } else {
+          //change link text
+          jQuery("#submenu-home a").text("BUILDING IT TRUE")
+          jQuery("#build-it-true").fadeTo(1000, 0.0);
+          jQuery("#mdb-logo-large").fadeTo(1000, 1.0);
+        }
     });
     
     jQuery("#video-player").replaceWith("<a href='/videos/WEB%20VERSION_458x258.mov' rel='qtposter' jscontroller='false'><img src='/videos/WEB%20VERSION_458x258.jpg' width='458' height='274'/></a>");

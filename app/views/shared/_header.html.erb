@@ -20,5 +20,13 @@
                   :collection => @menu_pages.reject{|p| !p.self_and_ancestors.map(&:id).include?(@page.root.id) },
                   :extra_suffix => 'submenu'
                 } -%>
+    
+    <%- if @page.title == "Home" -%>
+      <nav id="submenu-home" class="menu clearfix">
+        <ul>
+          <li class="selected"><a href="#">BUILDING IT TRUE</a></li>
+        </ul>
+      </nav>
+    <%- end -%>
                 
 </div>

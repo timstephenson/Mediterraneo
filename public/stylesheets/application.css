@@ -157,6 +157,52 @@ a:active, a.active {
   padding-right: 15px;
   background: url(/images/left-arrow.png) no-repeat 100% 75%;
 }
+#submenu-home ul {
+  list-style: none;
+  margin-top: -32px;
+  margin-left: 35px;
+  padding: 0px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 9px;
+  float: left;
+}
+
+#submenu-home ul li {
+  margin-right: 10px;
+  line-height: 175%;
+}
+
+#submenu-home ul li a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#submenu-home ul li.selected a  {
+  color: #fff;
+  padding-right: 15px;
+  background: url(/images/left-arrow.png) no-repeat 100% 75%;
+}
+
+#submenu-home ul li a:hover {
+  color: #bc4f07;
+}
+
+/* 
+  home and build it treu styles  -----------------------------------------------------------------------------
+*/
+#mdb-logo-large {
+  margin-top: 200px;
+  margin-left: -136px;
+  height: 237px;
+}
+#build-it-true {
+  position: absolute;
+  top: 72px;
+  margin-top: 100px;
+  margin-left: -140px;
+  height: 487px;
+}
 
 /* 
   Body styles  -----------------------------------------------------------------------------
@@ -465,6 +511,7 @@ a:active, a.active {
   Footer styles  -----------------------------------------------------------------------------
 */
 #footer {
+  width: 1000px;
   border-top: 1px solid #BC4F07;
   padding-top: 25px;
   font-size: 10px;
