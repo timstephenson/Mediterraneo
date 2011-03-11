@@ -29,7 +29,10 @@
 <% content_for :head do %>
   <script src="http://www.apple.com/library/quicktime/2.0/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
   <script src="http://www.apple.com/library/quicktime/2.0/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
-  <link href="http://www.apple.com/library/quicktime/2.0/stylesheets/qtp_poster.css" rel="StyleSheet" type="text/css" />
+  <link href="/stylesheets/apple_qt_poster.css" rel="StyleSheet" type="text/css" />
+  <script language="JavaScript" type="text/javascript">
+    QTP.Poster.prototype.clickText = "<img src='/images/play_button.png'/>";
+  </script>
   <% if @page.title == "Home" %>
     <style type="text/css">
      #logo {
