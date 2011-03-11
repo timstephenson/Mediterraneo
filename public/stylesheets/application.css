@@ -453,6 +453,14 @@ a:active, a.active {
   background: transparent;
 }
 
+#project .thumbnail-box {
+  float: left;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  background: #BC4F07;
+}
+
 #project .thumbnail-bkd {
   float: left;
   width: 110px;
@@ -463,7 +471,7 @@ a:active, a.active {
 
 #project .image {
   position: absolute;
-  margin-top: -104px;
+  margin-top: -90px;
   margin-left: 20px;
   background-color: #9a9a94;
   padding: 10px;
@@ -492,6 +500,9 @@ a:active, a.active {
   width: 455px;
   margin-left: 330px;
   margin-top: 45px;
+}
+#third-row {
+  margin-left: -110px;
 }
 #left-arrow {
   margin: 0;
