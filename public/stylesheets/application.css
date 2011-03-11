@@ -197,6 +197,7 @@ a:active, a.active {
   height: 237px;
 }
 #build-it-true {
+  display: none;
   position: absolute;
   top: 72px;
   margin-top: 100px;

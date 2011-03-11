@@ -1,7 +1,6 @@
 jQuery(document).ready(function(){
-  jQuery("#build-it-true").hide();
-  jQuery("#body").fadeTo(0, 0.0);
 
+  jQuery("#body").fadeTo(0, 0.0);
   jQuery("#project #right").fadeTo(0, 0.7);
   jQuery("#project .thumbnail").fadeTo(0, 0.7);
   jQuery("#project #thumbnails").hide();
@@ -56,7 +55,6 @@ jQuery(document).ready(function(){
     });
     
     //home page animations
-    
     jQuery('#submenu-home a').click(function (e){
         e.preventDefault();
         var logo_opacity = jQuery("#mdb-logo-large").css("opacity");
