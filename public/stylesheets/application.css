@@ -440,9 +440,11 @@ a:active, a.active {
   cursor: pointer;
 }
 #project #thumbnails {
+  display: none;
   position: absolute;
 }
 #project #thumbnails-bkd {
+  display: none;
   position: absolute;
 }
 #project .thumbnail {
@@ -470,6 +472,7 @@ a:active, a.active {
 }
 
 #project .image {
+  display: none;
   position: absolute;
   margin-top: -90px;
   margin-left: 20px;
@@ -478,6 +481,7 @@ a:active, a.active {
   z-index: 1000;
 }
 #project .vertical {
+  display: none;
   margin-top: -194px;
   margin-left: 121px;
 }
@@ -493,6 +497,7 @@ a:active, a.active {
   padding-top:3px;
 }
 #project-description {
+  display: none;
   background-color: #9a9a94;
   position: absolute;
   font-weight: normal;
