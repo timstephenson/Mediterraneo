@@ -186,6 +186,7 @@ a:active, a.active {
 
 #submenu-home ul li a:hover {
   color: #bc4f07;
+  background: url(/images/left-arrow-black.png) no-repeat 100% 75%;
 }
 
 /* 
