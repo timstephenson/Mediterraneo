@@ -21,7 +21,15 @@ a:active, a.active {
 #logo {
   display: none;
 }
+/* 
+  Menu styles   ------------------------------------------------------------------------------
 
+#menu ul {
+  position: absolute;
+  top: 20px;
+  z-index: 10000;
+}
+*/
 /* 
   Body styles  -----------------------------------------------------------------------------
 */
@@ -32,6 +40,7 @@ a:active, a.active {
   float:left;
   margin-left: -47px;
   margin-top: -33px;
+  overflow: visible;
 }
 /* 
   Footer styles  -----------------------------------------------------------------------------
