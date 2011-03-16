@@ -1,8 +1,8 @@
 <% content_for :head_libraries, jquery_include_tags(:jquery_ui => true) %>
 <% content_for :head_libraries, javascript_include_tag("jquery-animate-colors") %>
-<% content_for :head_libraries, javascript_include_tag("application", "swf") %>
+<% content_for :head_libraries, javascript_include_tag("swf") %>
 
-<section id='home'>
+<div id='home'>
   <script language="JavaScript" type="text/javascript">
     function loadHome() {
       jQuery("#body").fadeTo(500, 0.0);
@@ -39,11 +39,5 @@
     	</object>
     </noscript>
   <%=raw @page[:body] %>
-</section>
-
-<% content_for :head do %>
-  <!--[if gte IE 8]>
-          <link rel="stylesheet" type="text/css" href="stylesheets/ie8.css" />
-  <![endif]-->
-<% end %>
+</div>
 

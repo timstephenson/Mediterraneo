@@ -1,16 +1,16 @@
 <% content_for :body_content_title, @category.title %>
   
-<section id="blog">
+<div id="blog">
   <div id="cap"> </div>
   <div id="body">
        <div id="content">
-        <section id="blog-navigation">
+        <div id="blog-navigation">
           <%= render :partial => "/blog/shared/categories" %>
           <%= render :partial => "/blog/shared/rss_feed" %>
           <%= blog_archive_list %>
-        </section>
+        </div>
     
-        <section id="blog-posts">
+        <div id="blog-posts">
           <% if @category.posts.any? %>
             <%= render :partial => "/blog/shared/post", :collection => @category.posts %>
           <% else %>
@@ -18,11 +18,11 @@
               <%= t('.no_posts') %>
             </p>
           <% end %>
-        </section>
+        </div>
       </div>
     </div>
   <div id="toe"></div>
-</section>
+</div>
 
 <% if Refinery.version < '0.9.9' %>
   <% content_for :head_libraries, jquery_include_tags(:jquery_ui => false) %>

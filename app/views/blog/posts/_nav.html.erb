@@ -1,5 +1,5 @@
 <% if next_or_previous?(@blog_post) -%>
-  <nav id="next_prev_article">
+  <div id="next_prev_article">
     <% if @blog_post.next.present? -%>
       <%= link_to raw(truncate(@blog_post.next.title) + "&nbsp;&#187;"), @blog_post.next, :class => 'next' %>
     <% end -%>
@@ -9,5 +9,5 @@
     <% if @blog_post.prev.present? -%>
       <%= link_to "&#171;&nbsp;".html_safe + truncate(@blog_post.prev.title), @blog_post.prev, :class => 'prev' %>
     <% end -%>
-  </nav><!-- /next_prev_article -->
+  </div><!-- /next_prev_article -->
 <% end -%>

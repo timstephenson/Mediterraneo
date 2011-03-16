@@ -1,17 +1,17 @@
-<section id="blog">
+<div id="blog">
   <div id="cap"> </div>
   <div id="body">
     <div id="content">
-      <section id="blog-navigation">
+      <div id="blog-navigation">
         <%= render :partial => "/blog/shared/categories" %>
         <%= render :partial => "/blog/shared/rss_feed" %>
         <%= blog_archive_list %>
-      </section>
+      </div>
     
-      <section id="blog-posts">
+      <div id="blog-posts">
         <h1>Blog Archive for <%= @archive_date.strftime('%B %Y') %></h1>
         <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-      </section>
+      </div>
     
       <%= "There are no blog articles posted for #{@archive_date.strftime('%B %Y')}. Stay tuned." unless @blog_posts.any? %>
       <%# TODO: Add locale logic here - hubble is a n00b at that %>
@@ -19,7 +19,7 @@
   </div>
   
   <div id="toe"> </div>
-</section>
+</div>
 
 <% if Refinery.version < '0.9.9' %>
   <% content_for :head_libraries, jquery_include_tags(:jquery_ui => false) %>

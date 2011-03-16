@@ -1,22 +1,22 @@
-<section id="blog">
+<div id="blog">
   <div id="cap"> </div>
   <div id="body">
     <div id="content">
-      <section id="blog-navigation">
+      <div id="blog-navigation">
         <%= render :partial => "/blog/shared/categories" %>
         <%= render :partial => "/blog/shared/posts" %>
         <%= render :partial => "/blog/shared/rss_feed" %>
         <%= blog_archive_list %>
-      </section>
+      </div>
     
-      <section id="blog-posts">
+      <div id="blog-posts">
       
         <div id="show_blog_post">
           <%= render 'post' %>
         </div>
 
         <% if BlogPost.comments_allowed? %>
-          <aside id="comments">
+          <div id="comments">
             <h2><%= t('.comments.title') %></h2>
 
             <% if (comments = @blog_post.comments.approved).any? %>
@@ -56,15 +56,15 @@
                 <%= f.submit t('.submit') %>
               </div>
             <% end %>
-          </aside>
+          </div>
         <% end %>
-      </section>
+      </div>
       </div>
     </div>
 
 
   <div id="toe"></div>
-</section>
+</div>
 
 <% if Refinery.version < '0.9.9' %>
   <% content_for :head_libraries, jquery_include_tags(:jquery_ui => false) %>

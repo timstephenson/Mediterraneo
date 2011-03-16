@@ -1,21 +1,21 @@
-<section id="blog">
+<div id="blog">
   <div id="cap"> </div>
   <div id="body">
     <div id="content">
-      <section id="blog-navigation">
+      <div id="blog-navigation">
         <%= render :partial => "/blog/shared/categories" %>
         <%= render :partial => "/blog/shared/rss_feed" %>
         <%= blog_archive_list %>
-      </section>
-      <section id="blog-posts">
+      </div>
+      <div id="blog-posts">
         <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-      </section>
+      </div>
       <%= "<p>There are no blog articles posted yet. Stay tuned.</p>".html_safe unless @blog_posts.any? %>
       <%# TODO: Add locale logic here - hubble is a n00b at that %>
     </div>
   </div>
   <div id="toe"></div>
-</section>
+</div>
 <div class="clear"></div>
 
 <% if Refinery.version < '0.9.9' %>

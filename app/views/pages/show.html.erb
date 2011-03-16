@@ -1,7 +1,7 @@
-<section id='title_image'>
+<div id='title_image'>
   <%=raw @page[:title_image] %>
-</section>
-<section id='central_image'>
+</div>
+<div id='central_image'>
   <%=raw @page[:central_image] %>
   
   <% unless @page[:worker_info].blank? %>
@@ -15,13 +15,13 @@
     <%=raw @page[:description] %>
   </div>
   <% end %>
-</section>
-<section id='body_content'>
+</div>
+<div id='body_content'>
   <%=raw @page[:body] %>
-</section>
-<section id='side_body_content'>
+</div>
+<div id='side_body_content'>
   <%=raw @page[:contact_info] %>
-</section>
+</div>
 
 <% content_for :head_libraries, jquery_include_tags(:jquery_ui => true) %>
 <% content_for :head_libraries, javascript_include_tag('application') %>
@@ -33,16 +33,14 @@
   <script language="JavaScript" type="text/javascript">
     QTP.Poster.prototype.clickText = "<img src='/images/play_button.png'/>";
   </script>
-  <% if @page.title == "Home" %>
+
+  
+  <%- if @page.title == "Home" -%>
     <style type="text/css">
      #logo {
        display: none;
      }
-
     </style>
-  <% end %>
-  <!--[if gte IE 8]>
-          <link rel="stylesheet" type="text/css" href="stylesheets/ie8.css" />
-  <![endif]-->
+  <%- end -%>
 
 <% end %>

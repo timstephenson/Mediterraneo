@@ -1,19 +1,19 @@
 
-<article id="blog_post">
-  <header>
+<div id="blog_post">
+  <div>
     <h1><%= @blog_post.title %></h1>
-    <details>
-      <time datetime="<%= @blog_post.published_at.strftime('%Y-%m-%d') %>" class='posted_at'>
+    <div>
+      <div datetime="<%= @blog_post.published_at.strftime('%Y-%m-%d') %>" class='posted_at'>
         <%= @blog_post.published_at.strftime('%m.%d.%Y') %>
-      </time>
-    </details>
-  </header>
+      </div>
+    </div>
+  </div>
   <%= @blog_post.body.html_safe %>
 
   <% if BlogPost::ShareThis.enabled? %>
     <span class="st_sharethis" displayText="ShareThis"></span>
   <% end %>
-</article>
+</div>
 <%= render :partial => '/shared/draft_page_message' unless @blog_post.nil? or @blog_post.live? -%>
 <% if next_or_previous?(@blog_post) -%>
     <%= render 'nav' %>

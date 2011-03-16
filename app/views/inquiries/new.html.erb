@@ -1,10 +1,10 @@
 <% unless @page[:central_image].blank? %>
-  <section id='title_image'>
+  <div id='title_image'>
     <%=raw @page[:title_image] %>
-  </section>
-  <section id='central_image'>
+  </div>
+  <div id='central_image'>
     <%=raw @page[:central_image] %>
-  </section>
+  </div>
 <% end %>
 
 <% content_for :body_content_left do %>

@@ -6,7 +6,8 @@
 
 @font-face {
     font-family: "Andale";
-    src: url(/Andale-Mono.ttf) format("truetype");
+    src: url(/Andale-Mono.eot); /* EOT file for IE */
+    src: local(" Andale-Mono "), url(/Andale-Mono.ttf) format("truetype");
 }
 h1.font-size-large {
     text-transform: uppercase;
