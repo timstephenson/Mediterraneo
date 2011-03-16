@@ -70,7 +70,5 @@ jQuery(document).ready(function(){
           jQuery("#mdb-logo-large").fadeTo(1000, 1.0);
         }
     });
-    
-    jQuery("#video-player").replaceWith("<a href='/videos/WEB%20VERSION_458x258.mov' rel='qtposter' jscontroller='false'><img src='/videos/WEB%20VERSION_458x258.jpg' width='458' height='274'/></a>");
-     
+         
  });
