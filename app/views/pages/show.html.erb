@@ -18,6 +18,7 @@
 </div>
 <div id='body_content'>
   <%=raw @page[:body] %>
+  <%- if @page.title.downcase == "about" -%>
   <script>
 		flowplayer("player", "/videos/flowplayer-3.2.7.swf",  {
 
@@ -39,6 +40,7 @@
     	]
     });
 	</script>
+	<%- end -%>
 </div>
 <div id='side_body_content'>
   <%=raw @page[:contact_info] %>
