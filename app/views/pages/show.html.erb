@@ -18,22 +18,36 @@
 </div>
 <div id='body_content'>
   <%=raw @page[:body] %>
+  <script>
+		flowplayer("player", "/videos/flowplayer-3.2.7.swf",  {
+
+    	// here is our playlist with two clips
+    	playlist: [
+
+    		// this first PNG clip works as a splash image
+    		{
+    			url: '/videos/about_splash_458x258.jpg', 
+    			scaling: 'orig'
+    		},
+    		// second clip is a video. when autoPlay is set to false the splash screen will be shown
+    		{
+    			url: '/videos/about_mdb_458x258.m4v', 
+    			autoPlay: false, 
+    			// video will be buffered when splash screen is visible
+    			autoBuffering: true 
+    		}
+    	]
+    });
+	</script>
 </div>
 <div id='side_body_content'>
   <%=raw @page[:contact_info] %>
 </div>
 
 <% content_for :head_libraries, jquery_include_tags(:jquery_ui => true) %>
-<% content_for :head_libraries, javascript_include_tag('application') %>
+<% content_for :head_libraries, javascript_include_tag('application', 'flowplayer-3.2.6.min') %>
 
 <% content_for :head do %>
-  <script src="http://www.apple.com/library/quicktime/2.0/scripts/prototype.js" language="JavaScript" type="text/javascript"></script>
-  <script src="http://www.apple.com/library/quicktime/2.0/scripts/qtp_poster.js" language="JavaScript" type="text/javascript"></script>
-  <link href="/stylesheets/apple_qt_poster.css" rel="StyleSheet" type="text/css" />
-  <script language="JavaScript" type="text/javascript">
-    QTP.Poster.prototype.clickText = "<img src='/images/play_button.png'/>";
-  </script>
-
   
   <%- if @page.title == "Home" -%>
     <style type="text/css">
