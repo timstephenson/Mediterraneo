@@ -45,7 +45,7 @@ gem 'refinerycms-blog', '~> 1.1'
 # gem 'refinerycms-theming',    '~> 0.9.8'
 
 # Add i18n support (optional, you can remove this if you really want to).
-gem 'refinerycms-i18n',         '~> 0.9'
+# gem 'refinerycms-i18n',         '~> 0.9'
 
 # END REFINERY CMS ============================================================
 
